@@ -1,0 +1,39 @@
+3.10.0
+columnModel=
+maxCellIndex=16
+keyColumnIndex=0
+columnCount=17
+{"cellIndex":0,"originalName":"name","name":"name"}
+{"cellIndex":1,"originalName":"edition_year","name":"edition_year"}
+{"cellIndex":2,"originalName":"description","name":"description"}
+{"cellIndex":3,"originalName":"start_date","name":"start_date"}
+{"cellIndex":4,"originalName":"end_date","name":"end_date"}
+{"cellIndex":5,"originalName":"duration_days","name":"duration_days"}
+{"cellIndex":6,"originalName":"duration_iso","name":"duration_iso"}
+{"cellIndex":7,"originalName":"venue","name":"venue"}
+{"cellIndex":8,"originalName":"city","name":"city"}
+{"cellIndex":9,"originalName":"country_fr","name":"country_fr"}
+{"cellIndex":10,"originalName":"organizer","name":"organizer"}
+{"cellIndex":11,"originalName":"funder","name":"funder"}
+{"cellIndex":12,"originalName":"keywords_list","name":"keywords_list"}
+{"cellIndex":13,"originalName":"capacity_clean","name":"capacity_clean"}
+{"cellIndex":14,"originalName":"languages_list","name":"languages_list"}
+{"cellIndex":15,"originalName":"url","name":"url"}
+{"cellIndex":16,"originalName":"year_group","name":"year_group"}
+columnGroupCount=0
+/e/
+history=
+pastEntryCount=0
+futureEntryCount=0
+/e/
+rowCount=10
+{"starred":false,"flagged":false,"cells":[{"v":"Festival de Cannes"},{"v":"2025"},{"v":"Rendez-vous majeur du cinéma mondial, le Festival de Cannes combine compétition officielle, marché du film et circulation internationale des œuvres."},{"v":"2025-05-13"},{"v":"2025-05-24"},{"v":"12"},{"v":"P12D"},{"v":"Palais des Festivals et des Congrès"},{"v":"Cannes"},{"v":"France"},{"v":"Festival de Cannes"},{"v":"Ville de Cannes"},{"v":"cinéma | compétition | auteur | tapis rouge"},null,{"v":"fr,en"},{"v":"https://www.festival-cannes.com/"},{"v":"2025"}]}
+{"starred":false,"flagged":false,"cells":[{"v":"Glastonbury Festival"},{"v":"2025"},{"v":"Festival pluridisciplinaire organisé à Worthy Farm, Glastonbury réunit musique, arts de scène, camping et logique caritative."},{"v":"2025-06-25"},{"v":"2025-06-29"},{"v":"5"},{"v":"P5D"},{"v":"Worthy Farm"},{"v":"Pilton"},{"v":"Royaume-Uni"},{"v":"Glastonbury Festivals Ltd"},{"v":"Non renseigné"},{"v":"music | arts | camping | charity"},null,{"v":"en"},{"v":"https://www.glastonburyfestivals.co.uk/"},{"v":"2025"}]}
+{"starred":false,"flagged":false,"cells":[{"v":"Montreux Jazz Festival"},{"v":"2025"},{"v":"Installé sur les rives du Léman, le Montreux Jazz Festival dépasse le seul jazz et programme aussi pop, soul, électronique et rencontres professionnelles."},{"v":"2025-07-04"},{"v":"2025-07-19"},{"v":"16"},{"v":"P16D"},{"v":"Venues du lac et Place du Marché"},{"v":"Montreux"},{"v":"Suisse"},{"v":"Fondation du Festival de Jazz de Montreux"},{"v":"Non renseigné"},{"v":"jazz | lakefront | live | music industry"},null,{"v":"fr,en"},{"v":"https://www.montreuxjazzfestival.com/"},{"v":"2025"}]}
+{"starred":false,"flagged":false,"cells":[{"v":"Festival d'Avignon"},{"v":"2025"},{"v":"Grand temps fort du spectacle vivant en France, le Festival d'Avignon articule théâtre, danse, performance et création contemporaine dans toute la ville."},{"v":"2025-07-05"},{"v":"2025-07-26"},{"v":"22"},{"v":"P22D"},{"v":"Palais des Papes et lieux du festival"},{"v":"Avignon"},{"v":"France"},{"v":"Festival d'Avignon"},{"v":"Ministère de la Culture"},{"v":"théâtre | danse | performance | création contemporaine"},null,{"v":"fr,en"},{"v":"https://festival-avignon.com/"},{"v":"2025"}]}
+{"starred":false,"flagged":false,"cells":[{"v":"Hellfest"},{"v":"2026"},{"v":"Festival de musiques metal et hard rock organisé à Clisson, Hellfest rassemble une programmation internationale sur plusieurs scènes en plein air."},{"v":"2026-06-18"},{"v":"2026-06-21"},{"v":"4"},{"v":"P4D"},{"v":"Site du Hellfest"},{"v":"Clisson"},{"v":"France"},{"v":"Hellfest Productions"},{"v":"Non renseigné"},{"v":"metal | hard rock | extreme music | live"},{"v":"240000"},{"v":"fr,en"},{"v":"https://hellfest.fr/"},{"v":"2026"}]}
+{"starred":false,"flagged":false,"cells":[{"v":"Francofolies de La Rochelle"},{"v":"2026"},{"v":"Festival consacré aux musiques francophones, les Francofolies articulent grandes scènes, découvertes d'artistes et actions d'éducation culturelle."},{"v":"2026-07-10"},{"v":"2026-07-14"},{"v":"5"},{"v":"P5D"},{"v":"Esplanade Saint-Jean d'Acre et centre-ville"},{"v":"La Rochelle"},{"v":"France"},{"v":"Francofolies de La Rochelle"},{"v":"Non renseigné"},{"v":"chanson francophone | pop | live | francophonie"},null,{"v":"fr"},{"v":"https://www.francofolies.fr/"},{"v":"2026"}]}
+{"starred":false,"flagged":false,"cells":[{"v":"Jazz in Marciac"},{"v":"2026"},{"v":"Festival d’été installé au cœur du Gers, Jazz in Marciac associe grands concerts sous chapiteau, village animé et transmission pédagogique."},{"v":"2026-07-20"},{"v":"2026-08-05"},{"v":"17"},{"v":"P17D"},{"v":"Chapiteau et places du village"},{"v":"Marciac"},{"v":"France"},{"v":"Association Jazz in Marciac"},{"v":"Non renseigné"},{"v":"jazz | concerts | village | masterclasses"},{"v":"300000"},{"v":"fr,en"},{"v":"https://www.jazzinmarciac.com/"},{"v":"2026"}]}
+{"starred":false,"flagged":false,"cells":[{"v":"Festival Interceltique de Lorient"},{"v":"2026"},{"v":"Grand événement dédié aux cultures celtiques, le festival combine concerts, bagadoù, danse, expositions et rencontres dans l'espace urbain."},{"v":"2026-07-31"},{"v":"2026-08-09"},{"v":"10"},{"v":"P10D"},{"v":"Lorient et agglomération"},{"v":"Lorient"},{"v":"France"},{"v":"Festival Interceltique de Lorient"},{"v":"Ville de Lorient"},{"v":"cultures celtiques | bagad | musique | danse"},{"v":"950000"},{"v":"fr,en,es"},{"v":"https://www.festival-interceltique.bzh/"},{"v":"2026"}]}
+{"starred":false,"flagged":false,"cells":[{"v":"Sziget Festival (2026)"},{"v":"2026"},{"v":"Grand rendez-vous musical et artistique de Budapest, Sziget déploie concerts, arts visuels, installations immersives et vie de festival sur l’île d’Óbuda."},{"v":"2026-08-05"},{"v":"2026-08-11"},{"v":"7"},{"v":"P7D"},{"v":"Óbudai-sziget"},{"v":"Budapest"},{"v":"Hongrie"},{"v":"Sziget Cultural Management"},{"v":"Non renseigné"},{"v":"music | arts | island festival | international | immersive"},null,{"v":"en,hu"},{"v":"https://szigetfestival.com/"},{"v":"2026"}]}
+{"starred":false,"flagged":false,"cells":[{"v":"Edinburgh Festival Fringe"},{"v":"2026"},{"v":"Le Fringe d'Édimbourg fonctionne en accès ouvert et agrège théâtre, humour, cabaret, danse et formes expérimentales dans toute la ville."},{"v":"2026-08-07"},{"v":"2026-08-31"},{"v":"25"},{"v":"P25D"},{"v":"Multiple venues across the city"},{"v":"Edinburgh"},{"v":"Royaume-Uni"},{"v":"Edinburgh Festival Fringe Society"},{"v":"Non renseigné"},{"v":"theatre | comedy | performance | open access"},null,{"v":"en"},{"v":"https://www.edfringe.com/"},{"v":"2026"}]}

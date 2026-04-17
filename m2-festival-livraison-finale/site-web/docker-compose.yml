@@ -1,0 +1,45 @@
+services:
+  mysql:
+    image: mysql:8.4
+    container_name: glam-festival-mysql
+    restart: unless-stopped
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: GLAM_FESTIVAL
+    ports:
+      - "3307:3306"
+    command:
+      - --character-set-server=utf8mb4
+      - --collation-server=utf8mb4_unicode_ci
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "127.0.0.1", "-proot"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+      start_period: 20s
+    volumes:
+      - festival_mysql_data:/var/lib/mysql
+      - ./SQL/festivals.sql:/docker-entrypoint-initdb.d/01-festivals.sql:ro
+
+  web:
+    build:
+      context: .
+      dockerfile: docker/php-apache/Dockerfile
+    container_name: glam-festival-web
+    restart: unless-stopped
+    depends_on:
+      mysql:
+        condition: service_healthy
+    environment:
+      GLAM_DB_HOST: mysql
+      GLAM_DB_PORT: 3306
+      GLAM_DB_USER: root
+      GLAM_DB_PASSWORD: root
+      GLAM_DB_NAME: GLAM_FESTIVAL
+    ports:
+      - "8081:80"
+    volumes:
+      - ./:/var/www/html
+
+volumes:
+  festival_mysql_data:

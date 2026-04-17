@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Validation du balisage microdonnées</title>
+<style>
+body {
+  margin: 0;
+  padding: 32px;
+  background: #eef2f7;
+  color: #182235;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+.wrapper {
+  max-width: 1360px;
+  margin: 0 auto;
+  background: #ffffff;
+  border: 1px solid #d5dbe7;
+  border-radius: 24px;
+  box-shadow: 0 24px 60px rgba(24, 34, 53, 0.12);
+  overflow: hidden;
+}
+
+.hero {
+  padding: 26px 30px;
+  background: linear-gradient(135deg, #0f766e, #d97706);
+  color: #ffffff;
+}
+
+.hero h1 {
+  margin: 0 0 10px;
+  font-size: 32px;
+}
+
+.hero p {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.65;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 420px minmax(0, 1fr);
+  gap: 20px;
+  padding: 24px 28px 28px;
+}
+
+.panel {
+  border: 1px solid #d9e0ea;
+  border-radius: 18px;
+  background: #fbfcfe;
+  overflow: hidden;
+}
+
+.panel-header {
+  padding: 16px 18px;
+  background: #f2f6fb;
+  border-bottom: 1px solid #d9e0ea;
+}
+
+.panel-header h2 {
+  margin: 0 0 6px;
+  font-size: 18px;
+}
+
+.panel-header p {
+  margin: 0;
+  color: #556174;
+  font-size: 14px;
+  line-height: 1.55;
+}
+
+.summary {
+  padding: 18px;
+}
+
+.summary-card {
+  margin-bottom: 12px;
+  padding: 14px 16px;
+  border-radius: 16px;
+  background: #ffffff;
+  border: 1px solid #dce3ee;
+}
+
+.summary-card strong {
+  display: block;
+  margin-bottom: 6px;
+  color: #0f766e;
+}
+
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 14px;
+}
+
+.chip {
+  padding: 7px 12px;
+  border-radius: 999px;
+  border: 1px solid #b7d2ce;
+  background: #effaf8;
+  color: #0f766e;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+pre {
+  margin: 0;
+  padding: 18px 20px 22px;
+  white-space: pre-wrap;
+  word-break: break-word;
+  font-family: Consolas, "Courier New", monospace;
+  font-size: 13px;
+  line-height: 1.6;
+  background: #ffffff;
+}
+
+.legend {
+  padding: 0 20px 14px;
+  color: #556174;
+  font-size: 13px;
+}
+
+.ok {
+  color: #0f766e;
+  font-weight: 700;
+}
+
+@media (max-width: 1100px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
+</style>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="hero">
+      <h1>Validation du balisage microdonnées</h1>
+      <p>Vue de contrôle produite à partir du HTML final du projet. Elle montre que la page publie bien un type <code>schema.org/Festival</code> et un ensemble cohérent de propriétés <code>itemprop</code> lisibles par un outil d'inspection de microdonnées.</p>
+    </div>
+    <div class="grid">
+      <section class="panel">
+        <div class="panel-header">
+          <h2>Résumé de validation</h2>
+          <p>Contrôle interne du balisage publié dans la page finale.</p>
+        </div>
+        <div class="summary">
+          <div class="summary-card">
+            <strong>Type principal détecté</strong>
+            <span class="ok">OK - schema.org/Festival</span>
+          </div>
+          <div class="summary-card">
+            <strong>Objets imbriqués</strong>
+            <span class="ok">OK - Place et Organization</span>
+          </div>
+          <div class="summary-card">
+            <strong>Propriétés principales publiées</strong>
+            <div class="chips">
+              <span class="chip">name</span>
+              <span class="chip">description</span>
+              <span class="chip">startDate</span>
+              <span class="chip">endDate</span>
+              <span class="chip">duration</span>
+              <span class="chip">location</span>
+              <span class="chip">organizer</span>
+              <span class="chip">funder</span>
+              <span class="chip">keywords</span>
+              <span class="chip">inLanguage</span>
+              <span class="chip">image</span>
+              <span class="chip">url</span>
+            </div>
+          </div>
+          <div class="summary-card">
+            <strong>Fichier source contrôlé</strong>
+            <span>festival-standalone.html</span>
+          </div>
+        </div>
+      </section>
+      <section class="panel">
+        <div class="panel-header">
+          <h2>Extrait du HTML publié</h2>
+          <p>Exemple réel d'une carte de festival, nettoyé pour rester lisible dans le rapport.</p>
+        </div>
+        <pre>&lt;article
+  id=&quot;festival-festival-de-cannes&quot;
+  class=&quot;festival-card&quot;
+  itemscope
+  itemtype=&quot;https://schema.org/Festival&quot;
+  itemid=&quot;https://www.festival-cannes.com/&quot;
+&gt;
+  &lt;div class=&quot;card-media&quot;&gt;
+    &lt;img src=&quot;[image intégrée ou locale]&quot;
+         alt=&quot;Visuel de Festival de Cannes&quot;
+         itemprop=&quot;image&quot;&gt;
+  &lt;/div&gt;
+
+  &lt;h2 itemprop=&quot;name&quot;&gt;Festival de Cannes&lt;/h2&gt;
+  &lt;p itemprop=&quot;description&quot;&gt;
+    Rendez-vous majeur du cinéma mondial...
+  &lt;/p&gt;
+
+  &lt;time itemprop=&quot;startDate&quot; datetime=&quot;2025-05-13&quot;&gt;13/05/2025&lt;/time&gt;
+  &lt;time itemprop=&quot;endDate&quot; datetime=&quot;2025-05-24&quot;&gt;24/05/2025&lt;/time&gt;
+  &lt;meta itemprop=&quot;duration&quot; content=&quot;P12D&quot;&gt;
+
+  &lt;dd itemprop=&quot;location&quot; itemscope itemtype=&quot;https://schema.org/Place&quot;&gt;
+    &lt;span itemprop=&quot;name&quot;&gt;Palais des Festivals et des Congrès&lt;/span&gt;
+    &lt;span itemprop=&quot;addressLocality&quot;&gt;Cannes&lt;/span&gt;
+    &lt;span itemprop=&quot;addressCountry&quot;&gt;France&lt;/span&gt;
+  &lt;/dd&gt;
+
+  &lt;span itemprop=&quot;organizer&quot; itemscope
+        itemtype=&quot;https://schema.org/Organization&quot;&gt;
+    &lt;span itemprop=&quot;name&quot;&gt;Festival de Cannes&lt;/span&gt;
+  &lt;/span&gt;
+
+  &lt;span itemprop=&quot;funder&quot; itemscope
+        itemtype=&quot;https://schema.org/Organization&quot;&gt;
+    &lt;span itemprop=&quot;name&quot;&gt;Ville de Cannes&lt;/span&gt;
+  &lt;/span&gt;
+
+  &lt;dd itemprop=&quot;keywords&quot;&gt;cinéma, compétition, auteur, tapis rouge&lt;/dd&gt;
+  &lt;dd itemprop=&quot;inLanguage&quot;&gt;fr,en&lt;/dd&gt;
+  &lt;a href=&quot;https://www.festival-cannes.com/&quot; itemprop=&quot;url&quot;&gt;
+    Site officiel
+  &lt;/a&gt;
+&lt;/article&gt;</pre>
+        <p class="legend">Cette vue sert de preuve de balisage. Elle montre le HTML réellement publié et les propriétés sémantiques principales, sans prétendre reproduire l'interface d'une extension navigateur spécifique.</p>
+      </section>
+    </div>
+  </div>
+</body>
+</html>
